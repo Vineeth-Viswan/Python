@@ -9,7 +9,7 @@ def create_character(char_name, strength, intelligence, charisma):
         return 'The character should have a name'
     elif(len(char_name) > 10):
         return 'The character name is too long'
-    elif(char_name.count(' ') > 0):
+    elif(' ' in char_name):
         return 'The character name should not contain spaces'
 
     if(not isinstance(strength, int) or not isinstance(intelligence, int) or not isinstance(charisma, int)):
@@ -46,4 +46,4 @@ def create_character(char_name, strength, intelligence, charisma):
 
     return rpg_char + str_value + '\n' + int_value + '\n' + cha_value
 
-print(create_character('ren', 5, 2, 1))
+print(create_character('ren g', 5, 2, 1))

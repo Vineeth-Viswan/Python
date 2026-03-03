@@ -103,6 +103,8 @@ print(my_str.replace('hello', 'hi'))
 split_words = my_str.split()
 print(split_words)
 
+print('-------------------------------')
+
 my_list = ['hello', 'world']
 print(' '.join(my_list))
 
